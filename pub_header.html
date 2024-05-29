@@ -1,0 +1,250 @@
+<?php
+$oebmczweb='https://www.mcz.harvard.edu';  // when site goes live
+
+
+//$oebmczweb='https://hwpi.harvard.edu/mcz';    // development site
+
+// header page for publications.  
+?>
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class='iem7'  lang='en' dir='ltr'><![endif]-->
+<!--[if lte IE 6]><html class='lt-ie9 lt-ie8 lt-ie7'  lang='en' dir='ltr'><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class='lt-ie9 lt-ie8'  lang='en' dir='ltr'><![endif]-->
+<!--[if IE 8]><html class='lt-ie9'  lang='en' dir='ltr'><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html  lang='en' dir='ltr'>
+<!--<![endif]-->
+<head>
+<meta charset='utf-8' />
+<!---<link rel='next' href='/mcz/publicationshome' />--->
+<!--<base href='http://publications.mcz.harvard.edu/index.html' />-->
+<!---<link rel='up' href='http://publications.mcz.harvard.edu/index.html' />--->
+<link rel='shortcut icon' href='/images/favicon.png' />
+<link rel='dns-prefetch' href='https://publications.mcz.harvard.edu/index.html' />
+<link rel='prev' href='https://www.mcz.harvard.edu/publications-instructions-authors' />
+<meta name='description' content='Appropriate submissions for The Bulletin of the Museum of Comparative Zoology and Breviora are original contributions concerned with systematics, evolutionary biology, ecology, and other aspects of organismal and comparative biology.  Longer contributions, those over 30 printed pages, should be published in the Bulletin; Breviora carries shorter papers. Both publications are issued at irregular intervals, mailed to domestic and foreign subscribers, and are automatically copyrighted with the Library of Congress.' />
+<meta name='generator' content='OpenScholar for Drupal 7 (http://theopenscholar.org)' />
+<link rel='canonical' href='https://publications.mcz.harvard.edu/index.html' />
+<link rel='shortlink' href='https://publications.mcz.harvard.edu/index.html' />
+<meta property='og:type' content='article' />
+<meta property='og:title' content='Publications' />
+<meta property='og:description' content='Appropriate submissions for The Bulletin of the Museum of Comparative Zoology and Breviora are original contributions concerned with systematics, evolutionary biology, ecology, and other aspects of organismal and comparative biology.  Longer contributions, those over 30 printed pages, should be published in the Bulletin; Breviora carries shorter papers. Both publications are issued at irregular intervals, mailed to domestic and foreign subscribers, and are automatically copyrighted with the Library of Congress.' />
+<meta name='twitter:card' content='summary' />
+<meta name='twitter:title' content='Museum of Comparative Zoology' />
+<meta name='twitter:description' content='Publications' />
+<meta name='twitter:image' content='/images/transparent_block.png' />
+
+<title>Publications | Museum of Comparative Zoology</title>
+<meta http-equiv='x-ua-compatible' content='IE=edge'>
+<script type='text/javascript'>window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if('function'==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e('handle'),a=e(2),u=e(3),c=e('ee').get('tracer'),f=e('loader'),s=NREUM;'undefined'==typeof window.newrelic&&(newrelic=s);var p=['setPageViewName','setCustomAttribute','setErrorHandler','finished','addToTrace','inlineHit','addRelease'],d='api-',l=d+'ixn-';a(p,function(e,t){s[t]=o(d+t,!0,'api')}),s.addPageAction=o(d+'addPageAction',!0),s.setCurrentRouteName=o(d+'routeName',!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o='function'==typeof t;return i(l+'tracer',[f.now(),e,n],r),function(){if(c.emit((o?'':'no-')+'fn-start',[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit('fn-err',[arguments,this,e],n),e}finally{c.emit('fn-end',[f.now()],n)}}}};a('setName,setAttribute,save,ignore,onEnd,getContext,end,get'.split(','),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){'string'==typeof e&&(e=new Error(e)),i('err',[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r='',i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),'undefined'==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:'undefined'!=typeof window.performance&&window.performance.timing&&'undefined'!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||'feature',y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u='nr@context',c=e('gos'),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e('ee').get('handle');t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||'object'!==t&&'function'!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i='nr@id',a=e('gos');t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName('script')[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c('mark',['onload',a()+h.offset],null,'api');var n=d.createElement('script');n.src='https://'+e.agent,t.parentNode.insertBefore(n,t)}}function o(){'complete'===d.readyState&&i()}function i(){c('mark',['domContent',a()+h.offset],null,'api')}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e('handle'),f=e(2),s=e('ee'),p=window,d=p.document,l='addEventListener',m='attachEvent',w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=''+location,y={beacon:'bam.nr-data.net',errorBeacon:'bam.nr-data.net',agent:'js-agent.newrelic.com/nr-1071.min.js'},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]('DOMContentLoaded',i,!1),p[l]('load',r,!1)):(d[m]('onreadystatechange',o),p[m]('onload',r)),c('mark',['firstbyte',u],null,'api');var x=0,E=e(4)},{}]},{},['loader']);</script>
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<link href='styles/getsat.loader-51218fd4.css' rel='stylesheet' type='text/css' media='screen'/>
+<link href='styles/css_wdujr76.css' rel='stylesheet' type='text/css' media='all'/>
+<link href='styles/css_9tZggx4FO.css' rel='stylesheet' type='text/css' media='all'/>
+<link href='styles/css_6p2KAeJ6D.css' rel='stylesheet' type='text/css' media='all'/>
+<link href='styles/css_WIiNTaOPO.css' rel='stylesheet' type='text/css' media='all'/>
+<link href='styles/css_dW-aNNrc.css' rel='stylesheet' type='text/css' media='screen'/>
+<link href='styles/css_ugY8JJmlf.css' rel='stylesheet' type='text/css' media='print'/>
+<link href='styles/css_uaIDKcYMU.css' rel='stylesheet' type='text/css' media='screen'/>
+<link href='styles/mather.css' rel='stylesheet' type='text/css' media='all'/>
+<link href='styles/responsive.mather.css' rel='stylesheet' type='text/css' media='all'/>
+<link href='styles/moved_inline_styles.css' rel='stylesheet' type='text/css' media='all'/>
+<!--[if lte IE 8]>
+<script type='text/javascript'>
+  var os_c = document.createElement;os_c('header');os_c('nav');os_c('section');os_c('article');os_c('aside');os_c('footer');os_c('hgroup');os_c('figure');
+</script>
+  <![endif]-->
+</head>
+<body class='html not-front logged-in one-sidebar sidebar-first page-node page-node- page-node-1116621 node-type-page og-context og-context-node og-context-node-739281  navbar-on' ng-app='openscholar'>
+<div id='skip-link'> <a href='#main-content' class='element-invisible element-focusable' tabindex='1'>Skip to main content</a> </div>
+
+<div id='page_wrap' class='page_wrap'>
+<!--REGION TO HOUSE RESPONSIVE MENU. OTHER CONTENT CAN'T BE PLACED HERE-->
+<div class='responive-menu-container clearfix'>
+    <ul class='mobile-buttons num-links-3'>
+        <li class='link-count-mobi-main first'><a href='#'  data-target='#block-os-primary-menu'><span aria-hidden='true' class='icon-menu'></span><span class='move'>Main Menu</span></a></li>
+        <li class='link-count-mobi-util'><a href='#'  data-target='#block-os-quick-links, #block-os-secondary-menu, #header .os-custom-menu'><span aria-hidden='true' class='icon-plus'></span><span class='move'>Utility Menu</span></a></li>
+    <!--    <li class='link-count-mobi-search last'><a href='#'  data-target='#block-os-search-db-site-search, #block-boxes-solr-search-box'><span aria-hidden='true' class='icon-search3'></span><span class='move'>Search</span></a></li>-->
+    </ul>
+</div>
+
+<!--FLEXIBLE ADMIN HEADER FOR USE BY SELECT GROUPS USING OS-->
+<div id='branding_header'>
+    <div  class='branding-container clearfix'>
+        <div class='branding-left'><a href='http://www.harvard.edu/'><img src='/images/harvard-logo.png' width='235' height='32' alt='University Logo' /></a></div>
+        <div class='branding-right'><a href='http://www.harvard.edu/'>HARVARD.EDU</a></div>
+    </div>
+</div>
+<div id='page' class='container page os_pages-section-1116324 header-main header-right content-top footer-left footer'>
+    <div id='page-wrapper'> 
+        
+        <!--header regions beg-->
+        <header id='header' class='clearfix' role='banner'>
+            <div id='header-container'>
+                <div id='header-panels' class='at-panel gpanel panel-display three-col clearfix'>
+                    <div class='region region-header-second'>
+                        <div class='region-inner clearfix'>
+                            <div id='block-boxes-1524144825' class='block block-boxes block-boxes-os_boxes_html contextual-links-region no-title'  module='boxes' delta='1524144825'>
+                                <div class='block-inner clearfix'>
+                                    <div class='block-content content' ng-non-bindable=''>
+                                        <div id='boxes-box-1524144825' class='boxes-box'>
+									<div class='boxes-box-content'><a href='https://www.mcz.harvard.edu' title=''><img height='150' width='766' alt='logo' class='media-element file-default file-os-files-xlarge' src='images/logo_for_website_smoothed_out_krono.png' title='' /></a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='region region-header-third'>
+                        <div class='region-inner clearfix'>
+                            <div id='block-os-secondary-menu' class='block block-os contextual-links-region no-title'  module='os' delta='secondary-menu'>
+                                <div class='block-inner clearfix'>
+                                    <div class='block-content content' ng-non-bindable=''>
+                                        <ul class='nice-menu nice-menu-down nice-menu-secondary-menu' id='nice-menu-secondary-menu'>
+                                            <li class='menu-207131 menu-path-node-1122883  first   odd  '><a href='<?php echo "$oebmczweb" ?>/people-directory'  title=''>People</a></li>
+                                            <li class='menu-18014 menu-path-mczbasemczharvardedu-SpecimenSearchcfm   even   last '><a href='https://mczbase.mcz.harvard.edu/'  title='search the MCZ collections database'>MCZ Specimen Database</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='block-boxes-solr-search-box' class='block block-boxes block-boxes-os_search_solr_search_box contextual-links-region no-title'  module='boxes' delta='solr_search_box'>
+                                <div class='block-inner clearfix'>
+                                    <div class='block-content content' ng-non-bindable=''>
+                                        <div id='boxes-box-solr_search_box' class='boxes-box'>
+                                            <div class='boxes-box-content'>
+                                         <!---  the search field was here --->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header regions end--> 
+        
+        <!--main menu region beg-->
+        <div id='menu-bar' class='nav region-menu-bar clearfix'>
+            <nav id='block-os-primary-menu' class='block block-os no-title menu-wrapper menu-bar-wrapper clearfix'  module='os' delta='primary-menu'>
+                <ul class='nice-menu nice-menu-down nice-menu-primary-menu' id='nice-menu-primary-menu'>
+                    <li class='menu-218298 menuparent  menu-path-node-1126911  first   odd  '><a href='<?php echo "$oebmczweb" ?>/mcz/research'  title=''>Research</a><span class='open-submenu'></span>
+                        <ul>
+                            <li class='menu-17992 menu-path-node-855536  first   odd  '><a href='<?php echo "$oebmczweb" ?>/biological-oceanography'  title=''>Biological Oceanography</a></li>
+                            <li class='menu-203442 menu-path-node-1120916   even  '><a href='<?php echo "$oebmczweb" ?>/concord-field-station'  title=''>Concord Field Station</a></li>
+                            <li class='menu-206671 menu-path-node-1123147   odd  '><a href='<?php echo "$oebmczweb" ?>/entomology'  title=''>Entomology</a></li>
+                            <li class='menu-18015 menu-path-node-855581   even  '><a href='<?php echo "$oebmczweb" ?>/herpetology'  title=''>Herpetology</a></li>
+                            <li class='menu-206718 menu-path-node-1123151   odd  '><a href='<?php echo "$oebmczweb" ?>/ichthyology'  title=''>Ichthyology</a></li>
+                            <li class='menu-18017 menu-path-node-858856   even  '><a href='<?php echo "$oebmczweb" ?>/invertebrate-paleontology'  title=''>Invertebrate Paleontology</a></li>
+                            <li class='menu-18018 menu-path-node-858866   odd  '><a href='<?php echo "$oebmczweb" ?>/invertebrate-zoology'  title=''>Invertebrate Zoology</a></li>
+                            <li class='menu-18019 menu-path-node-859451   even  '><a href='<?php echo "$oebmczweb" ?>/malacology'  title=''>Malacology</a></li>
+                            <li class='menu-218277 menu-path-node-1123155   odd  '><a href='<?php echo "$oebmczweb" ?>/mammalogy' >Mammalogy</a></li>
+                            <li class='menu-18022 menu-path-node-871106   even  '><a href='<?php echo "$oebmczweb" ?>/ornithology'  title=''>Ornithology</a></li>
+                            <li class='menu-191848 menu-path-node-1117853   odd  '><a href='<?php echo "$oebmczweb" ?>/population-genetics'  title=''>Population Genetics</a></li>
+                            <li class='menu-18024 menu-path-node-871196   even  '><a href='<?php echo "$oebmczweb" ?>/vertebrate-paleontology'  title=''>Vertebrate Paleontology</a></li>
+                            <li class='menu-200762 menu-path-node-1120408   odd   last '><a href='<?php echo "$oebmczweb" ?>/special-collections'  title=''>Special Collections</a></li>
+                        </ul>
+                    </li>
+                    <li class='menu-216243 menuparent  menu-path-node-739316   even  '><a href='<?php echo "$oebmczweb" ?>/resources'  title=''>Resources</a><span class='open-submenu'></span>
+                        <ul>
+                            <li class='menu-192945 menu-path-node-1117426  first   odd  '><a href='<?php echo "$oebmczweb" ?>/database'  title=''>Database</a></li>
+                            <li class='menu-215988 menu-path-node-1120533   even  '><a href='<?php echo "$oebmczweb" ?>/ernst-mayr-library' >Ernst Mayr Library</a></li>
+                            <li class='menu-18054 menu-path-node-858746   odd  '><a href='<?php echo "$oebmczweb" ?>/genetic-resources'  title=''>Genetic Resources</a></li>
+                            <li class='menu-216252 menu-path-node-1125888   even  '><a href='<?php echo "$oebmczweb" ?>/shared-use-facilities'  title=''>Shared-Use Facilities</a></li>
+                            <li class='menu-200775 menu-path-node-1120360   odd   last '><a href='<?php echo "$oebmczweb" ?>/policies-procedures'  title=''>Policies &amp; Procedures</a></li>
+                        </ul>
+                    </li>
+                    <li class='menu-216029 menuparent  menu-path-node-1125823   odd  '><a href='<?php echo "$oebmczweb" ?>/funding' >Funding</a><span class='open-submenu'></span>
+                        <ul>
+                            <li class='menu-207799 menu-path-node-1123427  first   odd  '><a href='<?php echo "$oebmczweb" ?>/edward-wilson-postdoctoral-fellowship-program'  title=''>Edward O. Wilson Postdoctoral Fellowship</a></li>
+                            <li class='menu-122280 menu-path-node-872816   even  '><a href='<?php echo "$oebmczweb" ?>/ernst-mayr-travel-grants'  title=''>Ernst Mayr Travel Grants</a></li>
+                            <li class='menu-122295 menu-path-node-872821   odd  '><a href='<?php echo "$oebmczweb" ?>/putnam-expedition-grants'  title=''>Putnam Expedition Grants</a></li>
+                            <li class='menu-122302 menu-path-node-872831   even  '><a href='<?php echo "$oebmczweb" ?>/grants-in-aid-undergraduate-research' >Grants-In-Aid of Undergraduate Research</a></li>
+                            <li class='menu-122307 menu-path-node-872836   odd   last '><a href='<?php echo "$oebmczweb" ?>/miyata-grants'  title=''>Miyata Grants</a></li>
+                        </ul>
+                    </li>
+                    <li class='menu-216006 menu-path-node-1125819   even  '><a href='<?php echo "$oebmczweb" ?>/public-exhibits' >Public Exhibits</a></li>
+                    <li class='menu-200235 menuparent  menu-path-node-1116324   odd   active-trail'><a href='<?php echo "$oebmczweb" ?>/publicationshome'  class='active'>Publications</a><span class='open-submenu'></span>
+                        <ul>
+                            <li class='menu-220635 menu-path-node-1127372  first   odd  '><a href='<?php echo "$oebmczweb" ?>/publications-about'  title=''>About</a></li>
+                            <li class='menu-190098 menu-path-node-1116621   even   active-trail'><a href='<?php echo "$oebmczweb" ?>/publications-instructions-authors'  title='' class='active active'>Instructions for Authors</a></li>
+                            <li class='menu-200250 menu-path-node-1116615   odd  '><a href='<?php echo "$oebmczweb" ?>/exchanges-reprints'  title=''>Exchanges &amp; Reprints</a></li>
+                            <li class='menu-200243 menu-path-node-1116611   even  '><a href='<?php echo "$oebmczweb" ?>/publication-copyright-permission'  title=''>Copyright Permission</a></li>
+                            <li class='menu-206216 menu-path-publicationsmczharvardedu-indexhtml   odd   last '><a href='http://publications.mcz.harvard.edu/index.html' >Search Publications</a></li>
+                        </ul>
+                    </li>
+                    <li class='menu-13398 menuparent  menu-path-node-739286 even last'><a href='<?php echo "$oebmczweb" ?>/about'>About</a><span class='open-submenu'></span>
+                        <ul>
+                            <li class='menu-170310 menu-path-node-739466 first odd'><a href='<?php echo "$oebmczweb" ?>/history'  title=''>History</a></li>
+                            <li class='menu-191976 menu-path-node-1117881 even'><a href='<?php echo "$oebmczweb" ?>/affiliates-facilities'  title=''>Affiliates &amp; Facilities</a></li>
+                            <li class='menu-192941 menu-path-node-858751 odd'><a href='<?php echo "$oebmczweb" ?>/collections-operations'  title=''>Collections Operations</a></li>
+                            <li class='menu-170304 menu-path-node-739476 even'><a href='<?php echo "$oebmczweb" ?>/annual-reports'  title=''>Annual Reports</a></li>
+                            <li class='menu-201609 menu-path-node-874891 odd'><a href='<?php echo "$oebmczweb" ?>/seminars'  title=''>Lunchtime Seminars</a></li>
+                            <li class='menu-201584 menu-path-node-874881 even'><a href='<?php echo "$oebmczweb" ?>/news/index'>News</a></li>
+                            <li class='menu-17994 menu-path-node-739291 odd last'><a href='<?php echo "$oebmczweb" ?>/contact' title=''>Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--page area ends-->
+<div id='extradiv'></div>
+<!--FLEXIBLE ADMIN FOOTER FOR USE BY SELECT GROUPS USING OS--> 
+<script src='js/respond.min.js'></script> 
+<script src='js/js_YQts-WlVDi8-vZsuOeE3VsmgyS3gMzNWFBN9CxRCiCc.js'></script> 
+
+
+<script>(function ($) { angular.module('openscholar', ['os-public-page','Messages','UserPanel','grouper','osHelp']); })();</script> 
+<script type='text/javascript'>window.NREUM||(NREUM={});NREUM.info={'beacon':'bam.nr-data.net','licenseKey':'5f8d8e8e9f','applicationID':'96415669','transactionName':'ZQNRMkBUCkpXBxFbXFxJcgVGXAtXGRYAQUdFFWwWU1IBZlUFCV5RUwVY','queueTime':0,'applicationTime':899,'atts':'SURSRAhOGUQ=','errorBeacon':'bam.nr-data.net','agent':''}</script>
+
+
+<script>jQuery.extend(Drupal.settings, {'basePath':'\/','pathPrefix':'mcz\/','ajaxPageState':{'theme':'hwpi_onepage','theme_token':'iHoMyZYYLT-JKH56zsFmmNoMjg199M8XG7-laHRj_eY','jquery_version':'1.8'},'colorbox':{'opacity':'0.85','current':'{current} of {total}','previous':'\u00ab Prev','next':'Next \u00bb','close':'Close','maxWidth':'98%','maxHeight':'98%','fixed':true,'mobiledetect':true,'mobiledevicewidth':'480px'},'jcarousel':{'ajaxPath':'\/mcz\/jcarousel\/ajax\/views'},'overlay':{'paths':{'admin':'group\/node\/*\/subscribe\/vsite_support_expire\ngroup\/node\/*\/unsubscribe\nnode\/*\/outline\nnode\/*\/outline\/remove\ncp\/appearance\/add-subtheme\ncp\/appearance\/add-subtheme\/*\ncp\/appearance\/update-subtheme\/*\ncp\/appearance\/delete-subtheme\/*\ncp\/users\/edit_membership\/*\ncp\/users\/delete_membership\/*\ncp\/users\/add\ncp\/users\/change_site_owner\nfield-collection\/*\/*\/edit\nfield-collection\/*\/*\/delete\nfield-collection\/*\/add\/*\/*\nfile\/add\nfile\/add\/*\nfile\/*\/edit\nfile\/*\/usage\nfile\/*\/delete\nmedia\/*\/edit\/*\nmedia\/browser\nmedia\/browser\/*\nmedia-gallery\/detail\/*\/*\/edit\nmedia-gallery\/detail\/*\/*\/remove\nnode\/*\/multiedit\nnode\/*\/edit\nnode\/*\/delete\nnode\/*\/revisions\nnode\/*\/revisions\/*\/revert\nnode\/*\/revisions\/*\/delete\nnode\/add\nnode\/add\/*\ngroup\/*\/*\/admin\/*\nnode\/*\/group\nos\/widget\/*\nos_events\/registration\/*\ncp\/os-importer\/*\ncp\/os-importer\/blog\/manage\nos\/pages\/*\ncp\/people\/sync-profiles\nos-profile\/create-profile\/*\nnode\/*\/revisions\/*\/view\ncp\/build\/vsite\/os-apache-solr-settings\noverlay\/dismiss-message\nuser\/*\/shortcuts\nadmin\nadmin\/*\nbatch\ntaxonomy\/term\/*\/edit\nuser\/*\/cancel\nuser\/*\/edit\nuser\/*\/edit\/*\nos\/vsite\/delete\/*\ncp\/welcome\ncp\/build\/taxonomy\/*\/add\ncp\/build\/menu\/link\/*\ncp\/build\/features\/*\ncp\/support\ncp\/redirect\/add\n0\ndevel\/*\nnode\/*\/devel\nnode\/*\/devel\/*\ncomment\/*\/devel\ncomment\/*\/devel\/*\nuser\/*\/devel\nuser\/*\/devel\/*\ntaxonomy\/term\/*\/devel\ntaxonomy\/term\/*\/devel\/*\n*\/group\/node\/*\/subscribe\/vsite_support_expire\n*\/group\/node\/*\/unsubscribe\n*\/node\/*\/outline\n*\/node\/*\/outline\/remove\n*\/cp\/appearance\/add-subtheme\n*\/cp\/appearance\/add-subtheme\/*\n*\/cp\/appearance\/update-subtheme\/*\n*\/cp\/appearance\/delete-subtheme\/*\n*\/cp\/users\/edit_membership\/*\n*\/cp\/users\/delete_membership\/*\n*\/cp\/users\/add\n*\/cp\/users\/change_site_owner\n*\/field-collection\/*\/*\/edit\n*\/field-collection\/*\/*\/delete\n*\/field-collection\/*\/add\/*\/*\n*\/file\/add\n*\/file\/add\/*\n*\/file\/*\/edit\n*\/file\/*\/usage\n*\/file\/*\/delete\n*\/media\/*\/edit\/*\n*\/media\/browser\n*\/media\/browser\/*\n*\/media-gallery\/detail\/*\/*\/edit\n*\/media-gallery\/detail\/*\/*\/remove\n*\/node\/*\/multiedit\n*\/node\/*\/edit\n*\/node\/*\/delete\n*\/node\/*\/revisions\n*\/node\/*\/revisions\/*\/revert\n*\/node\/*\/revisions\/*\/delete\n*\/node\/add\n*\/node\/add\/*\n*\/group\/*\/*\/admin\/*\n*\/node\/*\/group\n*\/os\/widget\/*\n*\/os_events\/registration\/*\n*\/cp\/os-importer\/*\n*\/cp\/os-importer\/blog\/manage\n*\/os\/pages\/*\n*\/cp\/people\/sync-profiles\n*\/os-profile\/create-profile\/*\n*\/node\/*\/revisions\/*\/view\n*\/cp\/build\/vsite\/os-apache-solr-settings\n*\/overlay\/dismiss-message\n*\/user\/*\/shortcuts\n*\/admin\n*\/admin\/*\n*\/batch\n*\/admin\/reports\/status\/php\n*\/taxonomy\/term\/*\/edit\n*\/user\/*\/cancel\n*\/user\/*\/edit\n*\/user\/*\/edit\/*\n*\/os\/vsite\/delete\/*\n*\/cp\/welcome\n*\/cp\/build\/taxonomy\/*\/add\n*\/cp\/build\/menu\/link\/*\n*\/cp\/build\/features\/*\n*\/cp\/support\n*\/cp\/redirect\/add\n*\/0\n*\/devel\/*\n*\/node\/*\/devel\n*\/node\/*\/devel\/*\n*\/comment\/*\/devel\n*\/comment\/*\/devel\/*\n*\/user\/*\/devel\n*\/user\/*\/devel\/*\n*\/taxonomy\/term\/*\/devel\n*\/taxonomy\/term\/*\/devel\/*','non_admin':'admin\/reports\/status\/php'},'pathPrefixes':[],'ajaxCallback':'https:\/\/hwpi.harvard.edu\/mcz\/overlay-ajax'},'getQ':'node\/1116621','urlIsAjaxTrusted':{'\/mcz\/publications-instructions-authors':true,'\/mcz\/search\/site':true},'paths':{'api':'\/api','vsite_home':'https:\/\/hwpi.harvard.edu\/mcz','TaxonomyWidget':'\/profiles\/openscholar\/modules\/frontend\/os_common\/TaxonomyWidget','FileEditor':'\/profiles\/openscholar\/modules\/frontend\/os_common\/FileEditor','app_form':'\/profiles\/openscholar\/modules\/frontend\/app_form','JSPager':'\/profiles\/openscholar\/modules\/frontend\/os_common\/JSPager','moduleRoot':'\/profiles\/openscholar\/modules\/frontend\/media_browser','apSettingsForm':'\/profiles\/openscholar\/modules\/frontend\/ap_settings_form\/templates','grouper':'\/profiles\/openscholar\/modules\/harvard\/grouper','adminPanelModuleRoot':'\/profiles\/openscholar\/modules\/frontend\/admin_panel','documentation':'\/profiles\/openscholar\/modules\/os\/modules\/os_help\/os_help.template.html','support_subscribe':'https:\/\/hwpi.harvard.edu\/mcz\/group\/node\/739281\/subscribe\/vsite_support_expire','support_unsubscribe':'https:\/\/hwpi.harvard.edu\/mcz\/group\/node\/739281\/unsubscribe','logout':'\/user\/logout?destination=node\/1116621'},'version':{'TaxonomyWidget':'1.0.0','FileEditor':'1.0.3','JSPager':'1.0','mediaBrowser':'1.0.5','apSettingsForm':'1.0.0','adminPanel':'0.0.12','userPanel':'0.0.2'},'spaces':{'id':'739281','path':'Museum of Comparative Zoology'},'os_ga':{'trackOutbound':1,'trackMailto':1,'trackDownload':1,'trackDownloadExtensions':'7z|aac|arc|arj|asf|asx|avi|bin|csv|docx?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xlsx?|xml|z|zip','trackNavigation':1},'versions':{'app_form':'0.1'},'extensionMap':{'image':['jpg','jpeg','gif','png'],'video':['mov','mpeg','mp4','m4v','avi','ogg','ogv','wmv'],'audio':['mp3','oga','m4a'],'document':['txt','pdf','doc','docx','dot','dotx','xls','xlsx','xlt','xltx','ppt','pptx','pot','potx','pps','ppsx','odt','ods','odp','xml','tex','rtf','wtml','wtt','wwtfig','csv','sas','ics','bib','enw','mrc','ris'],'html':[],'executable':['zip','tgz','gz','exe','tar','rar'],'icon':['ico']},'maximumFileSize':'128 MB','maximumFileSizeRaw':134217728,'embedWhitelist':['ae0521ba008c6c6dd67f-667e6d5e490a1bc46688be42ea525d83.ssl.cf1.rackcdn.com','3playmedia.com','airtable.com','altbibl.io','amcharts.com','ap.org','api2.libanswers.com','app.e2ma.net ','appointment-plus.com','arcgis.com','articulate-online.com','batchgeo.com','bbc.co.uk','bbc.in','bitbucket.io','blogspot.com','bloomberg.com','biodigital.com','brightcove.com','brightcove.net','c-span.org','candidcareer.com','carto.com','cartodb.com','cc.com','chartbeat.com','cincopa.com','cloudciti.es','codepen.io ','cognitoforms.com','college.harvard.edu','constantcontact.com','credly.com','crunch.io','ctctcdn.com','dafdirect.org','disqus.com','donorperfect.net','doodle.com','easychair.org','ebsco.com','embedly.com','embedsocial.com','eventbrite.com','exaptive.city','extrazoom.com','facebook.com','flickr.com','flipboard.com','flipsnack.com','fontawesome.io','forecast.io','gettyimages.com','github.io','gmodules.com','google.com','googleadservices.com','googleapis.com','gstatic.com','huntcal.com','harvard.edu','harvardartmuseums.org','harvarddapa.org','hotjar.com','instagram.com','instantcal.com','issuu.com','ivy.ai','jotform.com ','jsbin.com','jupyter.org','jwplatform.com','jwpsrv.com','kaltura.com','knack.com','knackhq.com','knightlab.com','libcal.com','libsyn.com','livestream.com','localhost','lynda.com','lytro.com','mailchimp.com','map.harvard.edu','mapbuildr.com','maphub.net','mapsalive.com','mediaamp.io','microsoftstream.com','mit.edu','mtvnservices.com','my-wasabi.net','ndtv.com','njstatelib.org','npr.org','nyt.com','nytimes.com','office.com','office365.com','ooyala.com','padlet.com','pardot.com','plot.ly','podbean.com','polleverywhere.com','preceden.com','qualtrics.com','quizlet.com','radiolab.org','rhumbl.com','sched.com','sched.org','screencast.com','scribd.com','seethestats.com','service-now.com','sharepoint.com','sharethis.com','shinyapps.io','shorensteincenter.org','signupgenius.com','simplecast.com','simplybook.me','sketchfab.com ','slaask.com','slideshare.net','smithsonianmag.com','smugmug.com','soundcloud.com','staffmap.com','statcounter.com','storify.com','surveymonkey.com','tableausoftware.com','ted.com','tradingview.com','trumba.com','tumblr.com','twitter.com','vimeo.com','vimeopro.com','wasabi.net ','wbur.org','webofstories.com','weforum.org','wildapricot.com','wnyc.org','wunderlist.com','yahoo.com','yellowdig.com','youcanbook.me','youtube.com','youtube-nocookie.com','zeemaps.com','zoho.com','zohopublic.com','zotero.org'],'admin_panel':{'user':'66025','cid':'IibzHpHCybxMaTw7xDlfQK5474vJCNtWy3TZFGDhmVY','keep_open':false,'purl_base_domain':'https:\/\/hwpi.harvard.edu'},'user_panel':{'user':{'uid':'66025','name':'XX','support_user':false,'is_member':true}},'os':{'session_lifetime':'2000000','warning_interval_before_timeout':300},'nice_menus_options':{'delay':800,'speed':'slow'},'ogContext':{'groupType':'node','gid':'739281'},'password':{'strengthTitle':'Password compliance:'},'type':'setting'});</script> 
+
+
+<!--main menu region end-->
+<div id='columns' class='clearfix' style='margin-top:5em;'>
+<div class='hg-container'>
+<div id='content-column' role='main'>
+<div class='content-inner'>
+<a name='main-content'></a>
+
+<?php if (trim($head)=="Search") { 
+   echo "
+   <header id='main-content-header'> <a name='main-content'></a>
+      <h1 id='page-title'>Search MCZ Publications</h1>
+  </header>
+
+  ";
+} else { 
+   echo "
+   <header id='main-content-header'> <a name='main-content'></a>
+       <h1 id='page-title'>MCZ Publications $head</h1>
+   </header>
+   ";
+ 
+  }
+   
+
+echo "
+<div class='contextual-controls-wrapper'></div>
+<!--front panel regions beg-->
+<div id='content-panels' class='at-panel gpanel panel-display content clearfix'>
+<div class='region region-content-top'>
+<div class='region-inner clearfix'>
+<div id='block-os-pages-main-content' class='block block-os-pages contextual-links-region no-title'  module='os_pages' delta='main_content'>
+<div class='block-inner clearfix'>
+<div class='block-content content'>
+<article id='node-1116324' class='node node-page article clearfix' role='article'>
+<div class='node-content'>
+<div class='field field-name-body field-type-text-with-summary field-label-hidden view-mode-full'>
+<div class='field-items'>
+<div class='field-item even'>
+<div style='width: 100%;clear: both;'>
+";
+
+
+
+?>

@@ -1,0 +1,255 @@
+<?php
+$oebmczweb='https://www.mcz.harvard.edu';
+$mcz = '';
+if (strpos($_SERVER['SCRIPT_NAME'],'mcz/')==1) { $mcz='/mcz'; } 
+
+echo"</div><!---end searchbar div-->
+                                                                        
+                                                                      
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--front panel regions end--> 
+                            
+                        </div>
+                    </div>
+                    
+                    <!--sidebar first region beg-->
+                    <div class='region region-sidebar-first sidebar'>
+                        <div class='region-inner clearfix'>
+                            <div id='block-boxes-os-pages-section-nav' class='block block-boxes block-boxes-os_boxes_sectionnav contextual-links-region section-nav no-title'  module='boxes' delta='os_pages_section_nav'>
+                                <div class='block-inner clearfix'>
+                                       <div class='block-content content' ng-non-bindable=''>
+                                        <div class='boxes-box'>
+                                            <div class='boxes-box-content'><img width='235px' height='auto' alt='MCZ Publications' title='MCZ Publications' class='media-element publications file-default file-os-files-large' src='../images/Bulletin_title-page-235.jpg' /></div>
+                                        </div>
+                                    </div>
+                                    <div class='block-content content'>
+                                        <div id='boxes-box-os_pages_section_nav' class='boxes-box'>
+                                            <div class='boxes-box-content'>
+                                                <ul class='menu clearfix'>
+                                                    <li class='first last expanded active-trail active-trail menu-depth-1'><a href='$oebmczweb/publicationshome'  class='active-trail active active'>Publications</a>
+                                                        <ul class='menu clearfix'>
+                                                            <li class='first leaf menu-depth-2'><a href='$oebmczweb/publications-instructions-authors' >Instructions for Authors</a></li>
+                                                            <li class='leaf menu-depth-2'><a href='$oebmczweb/exchanges-reprints' >Exchanges and Reprints</a></li>
+                                                            <li class='last leaf menu-depth-2'><a href='$oebmczweb/publication-copyright-permission' >Copyright Permission</a></li> 
+                                                            ";
+           
+    echo "<li class='last expanded active-trail active-trail menu-depth-2 menu-item-180638'><a class='active-trail active active' href='$mcz/$targetpage'>Search Publications</a>\n";
+
+          // expand submenu, figure out which link is current 
+          $id1 = $id2 = $id3 = $id4 = $id5 = $id6 = $id7 = $id8 = $id9 = $id10 = $id11 = $id12 = $id13 = $id14 = "";
+
+          switch ($_SERVER['QUERY_STRING']) { 
+          case "publication=Breviora":
+             $id2 = "class='current'";
+             break;
+          case "publication=bullmcz":
+             $id3 = "class='current'";
+             break;
+          case "publication=bullmczsp":
+             $id11 = "class='current'";
+             break;
+          case "publication=occpapmol":
+             $id12 = "class='current'";
+             break;
+          case "publication=spoccpapmol":
+             $id13 = "class='current'";
+             break;
+          case "publication=johnsonia":
+             $id14 = "class='current'";
+             break;
+          case "publication=memoirs":
+             $id7 = "class='current'";
+             break;
+          case "publication=booksmonographs":
+             $id8 = "class='current'";
+          case "publication=annualreports":
+             $id9 = "id='current'";
+             break;
+          case "publication=newsletter":
+             $id10 = "id='current'";
+             break;
+          case "list=taxa":
+             $id4 = "id='current'";
+             break;
+          case "list=topics":
+             $id5 = "id='current'";
+             break;
+          case "list=departments":
+             $id6 = "id='current'";
+             break;
+          default: 
+             $id1 = "id='current'";
+       }
+       echo "<ul class='menu navigation clearfix'>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage' $id1 >Search All</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=Breviora' $id2 >Breviora</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=bullmcz' $id3 >Bulletin of the Museum of Comparative Zoology</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=bullmczsp' $id11 >Bulletin of the Museum of Comparative Zoology Special Publications</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=memoirs' $id7 >Memoirs of the Museum of Comparative Zoology</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=occpapmol' $id12 >Occasional Papers on Mollusks</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=spoccpapmol' $id13 >Special Occasional Publication [on Mollusks]</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=johnsonia' $id14 >Johnsonia</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=booksmonographs' $id8 >Books &amp; Monographs</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=annualreports' $id9 >Annual Reports</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?publication=newsletter' $id10 >Newsletters</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?list=taxa' $id4 >Taxon List</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?list=departments' $id6 >Department List</a></li>
+               <li class='first leaf menu-depth-3 menu-item-180649'><a href='$targetpage?list=topics' $id5 >Other Topics List</a></li>
+            </ul>
+          </li>\n
+           </ul>
+           </li><li></li>
+           </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+                    
+                </div>
+            </div>
+            <!--footer region beg-->
+            <footer id='footer' class='clearfix' role='contentinfo'> 
+                <!-- Three column 3x33 Gpanel -->
+                
+                <div class='at-panel gpanel panel-display footer clearfix'>
+                    <div class='region region-footer-first'>
+                        <div class='region-inner clearfix'>
+                            <div id='block-boxes-1470838049' class='block block-boxes block-boxes-os_boxes_html contextual-links-region no-title'  module='boxes' delta='1470838049'>
+                                <div class='block-inner clearfix'>
+                                    <div class='block-content content'>
+                                        <div id='boxes-box-1470838049' class='boxes-box'>
+                                            <div class='boxes-box-content'>
+                                                <p> <img height='86' width='400' alt='Harvard Museum of Comparative Zoology Logo' title='Harvard Museum of Comparative Zoology Logo' class='media-element file-default file-os-files-medium' src='images/harvard_museum_of_comparative_zoology_horizontal_rgb.png' /></p>
+                                                <p style='width:390px; text-align:right; margin-top:-2em'>
+												<a href='https://mcz.harvard.edu/privacy-policy' style='color:#215990'>Privacy |</a> <a href='https://mcz.harvard.edu/user-agreement' style='color:#215990'>User Agreement</a>
+												</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='region region-footer'>
+                        <div class='region-inner clearfix'>
+                            <div id='block-os-footer' class='block block-os contextual-links-region os-custom-menu no-title'  module='os' delta='footer'>
+                                <div class='block-inner clearfix'>
+                                    <div class='block-content content'>
+                                        <ul class='menu clearfix'>
+                                            <li class='first leaf menu-depth-1 menu-item-122225'><a href='https://hmsc.harvard.edu/'  title=''>Harvard Museums of Science &amp; Culture</a></li>
+                                            <li class='last leaf menu-depth-1 menu-item-122230'><a href='https://oeb.harvard.edu/' >Organismic and Evolutionary Biology</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='block-boxes-1504190738' class='block block-boxes block-boxes-os_boxes_follow contextual-links-region no-title'  module='boxes' delta='1504190738'>
+                                <div class='block-inner clearfix'>
+                                    <div class='block-content content'>
+                                        <div id='boxes-box-1504190738' class='boxes-box'>
+                                            <div class='boxes-box-content'>
+                                                <div class='item-list'>
+                                                    <ul class='follow-me-links'>
+                                                        <li><a href='https://www.instagram.com/harvardmcz/'  class='follow-icon' style='background-position: -630px 0px' target='_blank'>https://www.instagram.com/harvardmcz/</a></li>
+                                                        <li><a href='https://twitter.com/HarvardMCZ'  class='follow-icon' style='background-position: -189px 0px' target='_blank'>https://twitter.com/HarvardMCZ</a></li>
+                                                        <li><a href='https://www.facebook.com/HarvardMCZ/'  class='follow-icon' style='background-position: -531px 0px' target='_blank'>https://www.facebook.com/HarvardMCZ/</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='region region-footer-bottom'>
+                        <div class='region-inner clearfix'>
+                            <div id='block-boxes-1522347740' class='block block-boxes block-boxes-os_boxes_media contextual-links-region no-title'  module='boxes' delta='1522347740'>
+                                <div class='block-inner clearfix'>
+                                    <div class='block-content content'>
+                                        <div id='boxes-box-1522347740' class='boxes-box'>
+                                            <div class='boxes-box-content'>
+                                                <div id='file-973429' class='file file-html file-html-embed contextual-links-region'>
+                                                    <h2 class='element-invisible'><a href=''>d327872e00f44e2d502b313399641a26</a></h2>
+                                                    <div class='content'>
+                                                        <div class='file-info'></div>
+                                                        <div class='field field-name-field-html-code field-type-text-long field-label-hidden view-mode-full'>
+                                                            <div class='field-items'>
+                                                                <div class='field-item even'>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--footer region end-->
+            </footer>
+        </div>
+    </div>
+    <!--page area ends-->
+    
+    <div id='extradiv'></div>
+    
+    <!--FLEXIBLE ADMIN FOOTER FOR USE BY SELECT GROUPS USING OS-->
+ <div id='branding_footer'>
+	<div class='branding-container'>
+	    <div class='copyright' style='font-size: 12px;'>
+	       <span class='harvard-copyright'>Copyright &copy; 2022 The President and Fellows of Harvard College</span> 
+	       | <a href='http://accessibility.harvard.edu/'>Accessibility</a> 
+	       | <a href='http://www.harvard.edu/reporting-copyright-infringements'>Report Copyright Infringement</a>
+	     </div>		
+	 </div>
+  </div>
+</div>
+<!-- /page_wrap -->
+
+
+
+
+
+<script>(function ($) { angular.module('openscholar', ['os-public-page','Messages','UserPanel','grouper','osHelp']); })();</script> 
+<script type='text/javascript'>window.NREUM||(NREUM={});NREUM.info={'beacon':'bam.nr-data.net','licenseKey':'5f8d8e8e9f','applicationID':'96415669','transactionName':'ZQNRMkBUCkpXBxFbXFxJcgVGXAtXGRYAQUdFFWwWU1IBZlUFCV5RUwVY','queueTime':0,'applicationTime':899,'atts':'SURSRAhOGUQ=','errorBeacon':'bam.nr-data.net','agent':''}</script>
+
+<script src='js/angular.js'></script> 
+<script src='js/angular-sanitize.js'></script> 
+<script src='js/angular-cookies.js'></script> 
+<script src='js/ngStorage.min.js'></script> 
+<script src='js/js_T_6NwTqDvOTa2B712L3x1iHrCqinQtSTiBcOO-C8FhA.js'></script> 
+<script src='js/js_ZwtHh_UtMhEyIZ7P23uU_tO_tZHXgPG1rk11b_m8s9Y.js'></script> 
+<script src='js/js_Rn5elXNQhlDoYcQPevamaekHFylOdL1VqleYpbtFcxs.js'></script> 
+<script>window.CKEDITOR_BASEPATH = '/profiles/openscholar/libraries/ckeditor/'</script> 
+<script>var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-17689007-1']);_gaq.push(['_trackPageview']);_gaq.push(['_setCustomVar',1,'Site homepage','https://www.mcz.harvard.edu',3]);(function() {var ga = document.createElement('script');ga.type = 'text/javascript';ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s);})();var addthis_config = {data_ga_social: true, data_ga_property: {'addthis_default':false}};</script> 
+<script src='js/js_DLRbvKZZMCXvBE45XQKkNwRO1KtJ5EfSOcuuTZjeq2Q.js'></script> 
+<script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML'></script> 
+<script>(function ($) { angular.module('openscholar', ['os-public-page','Messages','UserPanel','grouper','osHelp']); })();</script>
+<script src='js/js_bnvaZ3uVP9Zozk2m-0mQTIbl2X_g1E7cGsRdjqVHubk.js'></script> 
+<script src='js/js_qluyoBMkmyevXrrhnKB_2ie6cLJ7DL5g_0nHm6hyXwA.js'></script>
+<script src='js/mather.js'></script> 
+
+</body>
+</html>
+";
+
+?>
+
